@@ -4074,7 +4074,7 @@ Linker script and memory map
                 0x0000000000000000                __STACKSIZE_SVC__ = 0x0
                 0x0000000000000000                __STACKSIZE_UND__ = 0x0
                 0x0000000000000100                __STACKSIZE__ = 0x100
-                0x00000000080033a4                __do_debug_operation = __do_debug_operation_mempoll
+                0x00000000080033a8                __do_debug_operation = __do_debug_operation_mempoll
                 0x0000000000000000                __vfprintf = __vfprintf_float_long_long
                 0x0000000000000000                __vfscanf = __vfscanf_float_long_long_cc
                 0x0000000090000000                __qspi_load_start__ = ALIGN (__QUADSPI_FLASH_segment_start__, 0x4)
@@ -4229,210 +4229,210 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000008000414                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000008000414     0x2fc0
+.text           0x0000000008000414     0x2fc4
                 0x0000000008000414                __text_start__ = .
  *(.text .text.* .gnu.linkonce.t.* .glue_7t .glue_7 .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000008000414        0x0 linker stubs
  .glue_7t       0x0000000008000414        0x0 linker stubs
  .text.MX_CRYP_Init
-                0x0000000008000414       0x54 aes_ctr_756 THUMB Debug/crypto.o
+                0x0000000008000414       0x58 aes_ctr_756 THUMB Debug/crypto.o
                 0x0000000008000414                MX_CRYP_Init
  .text.MX_DMA_Init
-                0x0000000008000468       0x48 aes_ctr_756 THUMB Debug/crypto.o
-                0x0000000008000468                MX_DMA_Init
+                0x000000000800046c       0x48 aes_ctr_756 THUMB Debug/crypto.o
+                0x000000000800046c                MX_DMA_Init
  .text.AESEncrypt
-                0x00000000080004b0       0x3c aes_ctr_756 THUMB Debug/crypto.o
-                0x00000000080004b0                AESEncrypt
+                0x00000000080004b4       0x3c aes_ctr_756 THUMB Debug/crypto.o
+                0x00000000080004b4                AESEncrypt
  .text.AESDecrypt
-                0x00000000080004ec       0x54 aes_ctr_756 THUMB Debug/crypto.o
-                0x00000000080004ec                AESDecrypt
+                0x00000000080004f0       0x54 aes_ctr_756 THUMB Debug/crypto.o
+                0x00000000080004f0                AESDecrypt
  .text.Error_Handler
-                0x0000000008000540        0x6 aes_ctr_756 THUMB Debug/crypto.o
-                0x0000000008000540                Error_Handler
- *fill*         0x0000000008000546        0x2 
- .text.main     0x0000000008000548       0xac aes_ctr_756 THUMB Debug/main.o
-                0x0000000008000548                main
+                0x0000000008000544        0x6 aes_ctr_756 THUMB Debug/crypto.o
+                0x0000000008000544                Error_Handler
+ *fill*         0x000000000800054a        0x2 
+ .text.main     0x000000000800054c       0xac aes_ctr_756 THUMB Debug/main.o
+                0x000000000800054c                main
  .text.TIM2_IRQHandler
-                0x00000000080005f4       0x2c aes_ctr_756 THUMB Debug/main.o
-                0x00000000080005f4                TIM2_IRQHandler
+                0x00000000080005f8       0x2c aes_ctr_756 THUMB Debug/main.o
+                0x00000000080005f8                TIM2_IRQHandler
  .text.HAL_IncTick
-                0x0000000008000620       0x1c aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
-                0x0000000008000620                HAL_IncTick
+                0x0000000008000624       0x1c aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
+                0x0000000008000624                HAL_IncTick
  .text.HAL_GetTick
-                0x000000000800063c        0xc aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
-                0x000000000800063c                HAL_GetTick
+                0x0000000008000640        0xc aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
+                0x0000000008000640                HAL_GetTick
  .text.__NVIC_GetPriorityGrouping
-                0x0000000008000648       0x14 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x000000000800064c       0x14 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
  .text.__NVIC_EnableIRQ
-                0x000000000800065c       0x34 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x0000000008000660       0x34 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
  .text.__NVIC_SetPriority
-                0x0000000008000690       0x50 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x0000000008000694       0x50 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
  .text.NVIC_EncodePriority
-                0x00000000080006e0       0x58 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x00000000080006e4       0x58 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
  .text.HAL_NVIC_SetPriority
-                0x0000000008000738       0x38 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
-                0x0000000008000738                HAL_NVIC_SetPriority
+                0x000000000800073c       0x38 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x000000000800073c                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0000000008000770       0x1c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
-                0x0000000008000770                HAL_NVIC_EnableIRQ
+                0x0000000008000774       0x1c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+                0x0000000008000774                HAL_NVIC_EnableIRQ
  .text.HAL_CRYP_Init
-                0x000000000800078c       0x70 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x000000000800078c                HAL_CRYP_Init
+                0x0000000008000790       0x70 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000790                HAL_CRYP_Init
  .text.HAL_CRYP_Encrypt_DMA
-                0x00000000080007fc      0x310 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x00000000080007fc                HAL_CRYP_Encrypt_DMA
+                0x0000000008000800      0x310 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000800                HAL_CRYP_Encrypt_DMA
  .text.HAL_CRYP_Decrypt_DMA
-                0x0000000008000b0c      0x290 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x0000000008000b0c                HAL_CRYP_Decrypt_DMA
+                0x0000000008000b10      0x290 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000b10                HAL_CRYP_Decrypt_DMA
  .text.HAL_CRYP_IRQHandler
-                0x0000000008000d9c       0x9c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x0000000008000d9c                HAL_CRYP_IRQHandler
+                0x0000000008000da0       0x9c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000da0                HAL_CRYP_IRQHandler
  .text.HAL_CRYP_InCpltCallback
-                0x0000000008000e38        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x0000000008000e38                HAL_CRYP_InCpltCallback
+                0x0000000008000e3c        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000e3c                HAL_CRYP_InCpltCallback
  .text.HAL_CRYP_OutCpltCallback
-                0x0000000008000e42        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x0000000008000e42                HAL_CRYP_OutCpltCallback
+                0x0000000008000e46        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000e46                HAL_CRYP_OutCpltCallback
  .text.HAL_CRYP_ErrorCallback
-                0x0000000008000e4c        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
-                0x0000000008000e4c                HAL_CRYP_ErrorCallback
+                0x0000000008000e50        0xa aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000e50                HAL_CRYP_ErrorCallback
  .text.CRYP_TDES_IT
-                0x0000000008000e56      0x1be aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008000e5a      0x1be aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_AES_Decrypt_DMA
-                0x0000000008001014      0x15c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008001018      0x15c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_DMAInCplt
-                0x0000000008001170       0x2a aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008001174       0x2a aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_DMAOutCplt
-                0x000000000800119a       0x56 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x000000000800119e       0x56 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_DMAError
-                0x00000000080011f0       0x2e aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
- *fill*         0x000000000800121e        0x2 
+                0x00000000080011f4       0x2e aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+ *fill*         0x0000000008001222        0x2 
  .text.CRYP_SetDMAConfig
-                0x0000000008001220       0xb8 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008001224       0xb8 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_AES_IT
-                0x00000000080012d8      0x204 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x00000000080012dc      0x204 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_SetKey
-                0x00000000080014dc      0x10c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x00000000080014e0      0x10c aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_AESGCM_Process_DMA
-                0x00000000080015e8      0x1da aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x00000000080015ec      0x1da aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_AESCCM_Process_DMA
-                0x00000000080017c2      0x3a0 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x00000000080017c6      0x3a0 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_GCMCCM_SetPayloadPhase_IT
-                0x0000000008001b62      0x3da aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008001b66      0x3da aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_GCMCCM_SetHeaderPhase_DMA
-                0x0000000008001f3c      0x3d0 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008001f40      0x3d0 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.CRYP_GCMCCM_SetHeaderPhase_IT
-                0x000000000800230c      0x238 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x0000000008002310      0x238 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .text.HAL_DMA_Init
-                0x0000000008002544      0x15c aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
-                0x0000000008002544                HAL_DMA_Init
+                0x0000000008002548      0x15c aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x0000000008002548                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x00000000080026a0       0xc4 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
-                0x00000000080026a0                HAL_DMA_Start_IT
+                0x00000000080026a4       0xc4 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x00000000080026a4                HAL_DMA_Start_IT
  .text.HAL_DMA_IRQHandler
-                0x0000000008002764      0x310 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
-                0x0000000008002764                HAL_DMA_IRQHandler
+                0x0000000008002768      0x310 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x0000000008002768                HAL_DMA_IRQHandler
  .text.DMA_SetConfig
-                0x0000000008002a74       0x52 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
- *fill*         0x0000000008002ac6        0x2 
+                0x0000000008002a78       0x52 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+ *fill*         0x0000000008002aca        0x2 
  .text.DMA_CalcBaseAndBitshift
-                0x0000000008002ac8       0x60 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x0000000008002acc       0x60 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
  .text.DMA_CheckFifoParam
-                0x0000000008002b28       0xfc aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x0000000008002b2c       0xfc aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
  .text.HAL_CRYP_MspInit
-                0x0000000008002c24      0x114 aes_ctr_756 THUMB Debug/stm32f7xx_hal_msp.o
-                0x0000000008002c24                HAL_CRYP_MspInit
+                0x0000000008002c28      0x114 aes_ctr_756 THUMB Debug/stm32f7xx_hal_msp.o
+                0x0000000008002c28                HAL_CRYP_MspInit
  .text.NMI_Handler
-                0x0000000008002d38        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d38                NMI_Handler
- .text.HardFault_Handler
-                0x0000000008002d3a        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d3a                HardFault_Handler
- .text.MemManage_Handler
                 0x0000000008002d3c        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d3c                MemManage_Handler
- .text.BusFault_Handler
+                0x0000000008002d3c                NMI_Handler
+ .text.HardFault_Handler
                 0x0000000008002d3e        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d3e                BusFault_Handler
- .text.UsageFault_Handler
+                0x0000000008002d3e                HardFault_Handler
+ .text.MemManage_Handler
                 0x0000000008002d40        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d40                UsageFault_Handler
+                0x0000000008002d40                MemManage_Handler
+ .text.BusFault_Handler
+                0x0000000008002d42        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d42                BusFault_Handler
+ .text.UsageFault_Handler
+                0x0000000008002d44        0x2 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d44                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008002d42        0x4 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d42                SVC_Handler
- .text.DebugMon_Handler
                 0x0000000008002d46        0x4 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d46                DebugMon_Handler
- .text.PendSV_Handler
+                0x0000000008002d46                SVC_Handler
+ .text.DebugMon_Handler
                 0x0000000008002d4a        0x4 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d4a                PendSV_Handler
+                0x0000000008002d4a                DebugMon_Handler
+ .text.PendSV_Handler
+                0x0000000008002d4e        0x4 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d4e                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008002d4e        0xa aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d4e                SysTick_Handler
+                0x0000000008002d52        0xa aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d52                SysTick_Handler
  .text.DMA2_Stream5_IRQHandler
-                0x0000000008002d58       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d58                DMA2_Stream5_IRQHandler
+                0x0000000008002d5c       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d5c                DMA2_Stream5_IRQHandler
  .text.DMA2_Stream6_IRQHandler
-                0x0000000008002d68       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d68                DMA2_Stream6_IRQHandler
+                0x0000000008002d6c       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d6c                DMA2_Stream6_IRQHandler
  .text.CRYP_IRQHandler
-                0x0000000008002d78       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
-                0x0000000008002d78                CRYP_IRQHandler
+                0x0000000008002d7c       0x10 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+                0x0000000008002d7c                CRYP_IRQHandler
  .text.SysClock_init
-                0x0000000008002d88      0x178 aes_ctr_756 THUMB Debug/sys_clk.o
-                0x0000000008002d88                SysClock_init
+                0x0000000008002d8c      0x178 aes_ctr_756 THUMB Debug/sys_clk.o
+                0x0000000008002d8c                SysClock_init
  .text.SystemInit
-                0x0000000008002f00        0x4 aes_ctr_756 THUMB Debug/system_stm32f7xx.o
-                0x0000000008002f00                SystemInit
+                0x0000000008002f04        0x4 aes_ctr_756 THUMB Debug/system_stm32f7xx.o
+                0x0000000008002f04                SystemInit
  .text.__NVIC_EnableIRQ
-                0x0000000008002f04       0x34 aes_ctr_756 THUMB Debug/timer.o
+                0x0000000008002f08       0x34 aes_ctr_756 THUMB Debug/timer.o
  .text.__NVIC_SetPriority
-                0x0000000008002f38       0x50 aes_ctr_756 THUMB Debug/timer.o
+                0x0000000008002f3c       0x50 aes_ctr_756 THUMB Debug/timer.o
  .text.timer2_init
-                0x0000000008002f88       0x94 aes_ctr_756 THUMB Debug/timer.o
-                0x0000000008002f88                timer2_init
+                0x0000000008002f8c       0x94 aes_ctr_756 THUMB Debug/timer.o
+                0x0000000008002f8c                timer2_init
  .text.uart1_gpio_init
-                0x000000000800301c       0x78 aes_ctr_756 THUMB Debug/uart.o
-                0x000000000800301c                uart1_gpio_init
+                0x0000000008003020       0x78 aes_ctr_756 THUMB Debug/uart.o
+                0x0000000008003020                uart1_gpio_init
  .text.uart1_dma_init
-                0x0000000008003094       0xd8 aes_ctr_756 THUMB Debug/uart.o
-                0x0000000008003094                uart1_dma_init
+                0x0000000008003098       0xd8 aes_ctr_756 THUMB Debug/uart.o
+                0x0000000008003098                uart1_dma_init
  .text.uart1_init
-                0x000000000800316c       0xc0 aes_ctr_756 THUMB Debug/uart.o
-                0x000000000800316c                uart1_init
+                0x0000000008003170       0xc0 aes_ctr_756 THUMB Debug/uart.o
+                0x0000000008003170                uart1_init
  .text.uart1_send
-                0x000000000800322c       0x5c aes_ctr_756 THUMB Debug/uart.o
-                0x000000000800322c                uart1_send
+                0x0000000008003230       0x5c aes_ctr_756 THUMB Debug/uart.o
+                0x0000000008003230                uart1_send
  .text.uart1_receive
-                0x0000000008003288       0x3c aes_ctr_756 THUMB Debug/uart.o
-                0x0000000008003288                uart1_receive
+                0x000000000800328c       0x3c aes_ctr_756 THUMB Debug/uart.o
+                0x000000000800328c                uart1_receive
  .text.uartStateCheck
-                0x00000000080032c4       0x18 aes_ctr_756 THUMB Debug/uart.o
-                0x00000000080032c4                uartStateCheck
+                0x00000000080032c8       0x18 aes_ctr_756 THUMB Debug/uart.o
+                0x00000000080032c8                uartStateCheck
  .text.libc.memcpy
-                0x00000000080032dc       0x52 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libc_v7em_t_le_eabi.a(libc2_asm.o)
-                0x00000000080032dc                __aeabi_memcpy
-                0x00000000080032dc                memcpy
-                0x00000000080032e8                __aeabi_memcpy8
-                0x00000000080032e8                __aeabi_memcpy4
+                0x00000000080032e0       0x52 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libc_v7em_t_le_eabi.a(libc2_asm.o)
+                0x00000000080032e0                __aeabi_memcpy
+                0x00000000080032e0                memcpy
+                0x00000000080032ec                __aeabi_memcpy8
+                0x00000000080032ec                __aeabi_memcpy4
  .text.libc.strlen
-                0x000000000800332e       0x60 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libc_v7em_t_le_eabi.a(libc2_asm.o)
-                0x000000000800332e                strlen
+                0x0000000008003332       0x60 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libc_v7em_t_le_eabi.a(libc2_asm.o)
+                0x0000000008003332                strlen
  .text.libdebugio.__debug_io_lock
-                0x000000000800338e        0x2 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio.o)
-                0x000000000800338e                __debug_io_lock
+                0x0000000008003392        0x2 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio.o)
+                0x0000000008003392                __debug_io_lock
  .text.libdebugio.__debug_io_unlock
-                0x0000000008003390        0x2 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio.o)
-                0x0000000008003390                __debug_io_unlock
+                0x0000000008003394        0x2 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio.o)
+                0x0000000008003394                __debug_io_unlock
  .text.libc.debug_printf
-                0x0000000008003392       0x12 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio_asm.o)
-                0x0000000008003392                debug_printf
+                0x0000000008003396       0x12 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(libdebugio_asm.o)
+                0x0000000008003396                debug_printf
  .text.libdebugio.__do_debug_operation_mempoll
-                0x00000000080033a4       0x30 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(mempoll_debug_operations.o)
-                0x00000000080033a4                __do_debug_operation_mempoll
-                0x00000000080033d4                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x0000000000002fc0                __text_size__ = SIZEOF (.text)
-                0x00000000080033d4                __text_load_end__ = __text_end__
+                0x00000000080033a8       0x30 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.10/lib/libdebugio_v7em_t_le_eabi.a(mempoll_debug_operations.o)
+                0x00000000080033a8                __do_debug_operation_mempoll
+                0x00000000080033d8                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x0000000000002fc4                __text_size__ = SIZEOF (.text)
+                0x00000000080033d8                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -4443,70 +4443,70 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 aes_ctr_756 THUMB Debug/crypto.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x00000000080033d4                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
+                0x00000000080033d8                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
 
-.dtors          0x00000000080033d4        0x0
-                0x00000000080033d4                __dtors_start__ = .
+.dtors          0x00000000080033d8        0x0
+                0x00000000080033d8                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x00000000080033d4                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000000080033d8                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x00000000080033d4                __dtors_load_end__ = __dtors_end__
+                0x00000000080033d8                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x00000000080033d4                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x00000000080033d8                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x00000000080033d4        0x0
-                0x00000000080033d4                __ctors_start__ = .
+.ctors          0x00000000080033d8        0x0
+                0x00000000080033d8                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x00000000080033d4                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000000080033d8                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x00000000080033d4                __ctors_load_end__ = __ctors_end__
+                0x00000000080033d8                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x00000000080033d4                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x00000000080033d8                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x00000000080033d4       0x60
-                0x00000000080033d4                __rodata_start__ = .
+.rodata         0x00000000080033d8       0x70
+                0x00000000080033d8                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.pKeyCRYP
-                0x00000000080033d4       0x10 aes_ctr_756 THUMB Debug/crypto.o
+                0x00000000080033d8       0x20 aes_ctr_756 THUMB Debug/crypto.o
  .rodata.pInitVectCRYP
-                0x00000000080033e4       0x10 aes_ctr_756 THUMB Debug/crypto.o
- .rodata        0x00000000080033f4        0x7 aes_ctr_756 THUMB Debug/crypto.o
- *fill*         0x00000000080033fb        0x1 
- .rodata        0x00000000080033fc       0x30 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+                0x00000000080033f8       0x10 aes_ctr_756 THUMB Debug/crypto.o
+ .rodata        0x0000000008003408        0x7 aes_ctr_756 THUMB Debug/crypto.o
+ *fill*         0x000000000800340f        0x1 
+ .rodata        0x0000000008003410       0x30 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
  .rodata.flagBitshiftOffset.0
-                0x000000000800342c        0x8 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
-                0x0000000008003434                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000000060                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000008003434                __rodata_load_end__ = __rodata_end__
+                0x0000000008003440        0x8 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+                0x0000000008003448                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000000000070                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000008003448                __rodata_load_end__ = __rodata_end__
 
 .rel.dyn        0x0000000000200000        0x0
  .rel.iplt      0x0000000000200000        0x0 aes_ctr_756 THUMB Debug/crypto.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x0000000008003434                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x0000000008003448                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000008003434        0x0
-                0x0000000008003434                __ARM.exidx_start__ = .
-                0x0000000008003434                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x0000000008003448        0x0
+                0x0000000008003448                __ARM.exidx_start__ = .
+                0x0000000008003448                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000008003434                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x0000000008003448                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000008003434                __exidx_end = __ARM.exidx_end__
-                0x0000000008003434                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x0000000008003448                __exidx_end = __ARM.exidx_end__
+                0x0000000008003448                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x0000000008003434                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x0000000008003448                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000000        0x0 load address 0x0000000008003434
+.fast           0x0000000020000000        0x0 load address 0x0000000008003448
                 0x0000000020000000                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000000                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000008003434                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x0000000008003448                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000000        0x0
@@ -4515,9 +4515,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x0000000020000000                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .fast_run is too large to fit in RAM memory segment)
-                0x0000000008003434                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x0000000008003448                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000000      0x104 load address 0x0000000008003434
+.data           0x0000000020000000      0x104 load address 0x0000000008003448
                 0x0000000020000000                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.text     0x0000000020000000       0xff aes_ctr_756 THUMB Debug/main.o
@@ -4530,7 +4530,7 @@ Linker script and memory map
                 0x0000000020000100                SystemCoreClock
                 0x0000000020000104                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x0000000000000104                __data_size__ = SIZEOF (.data)
-                0x0000000008003538                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x000000000800354c                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 aes_ctr_756 THUMB Debug/crypto.o
@@ -4600,16 +4600,16 @@ Linker script and memory map
                 0x0000000000000000                __tbss_size__ = SIZEOF (.tbss)
                 0x0000000020000634                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .tbss is too large to fit in RAM memory segment)
-                0x0000000008003538                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x000000000800354c                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x0000000020000634        0x0 load address 0x0000000008003538
+.tdata          0x0000000020000634        0x0 load address 0x000000000800354c
                 0x0000000020000634                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x0000000020000634                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000008003538                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000008003538                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000003538                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x000000000800354c                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x000000000800354c                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x000000000000354c                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x0000000020000634        0x0
@@ -4713,21 +4713,21 @@ LOAD linker stubs
  .debug_frame   0x0000000000001294       0x6c aes_ctr_756 THUMB Debug/timer.o
  .debug_frame   0x0000000000001300       0xa8 aes_ctr_756 THUMB Debug/uart.o
 
-.debug_info     0x0000000000000000     0x8170
- .debug_info    0x0000000000000000      0xe6d aes_ctr_756 THUMB Debug/crypto.o
- .debug_info    0x0000000000000e6d      0x374 aes_ctr_756 THUMB Debug/main.o
- .debug_info    0x00000000000011e1      0xa06 aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
- .debug_info    0x0000000000001be7     0x1080 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
- .debug_info    0x0000000000002c67     0x1de7 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
- .debug_info    0x0000000000004a4e      0x937 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
- .debug_info    0x0000000000005385      0xd28 aes_ctr_756 THUMB Debug/stm32f7xx_hal_msp.o
- .debug_info    0x00000000000060ad      0x854 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
- .debug_info    0x0000000000006901      0x342 aes_ctr_756 THUMB Debug/sys_clk.o
- .debug_info    0x0000000000006c43      0x365 aes_ctr_756 THUMB Debug/system_stm32f7xx.o
- .debug_info    0x0000000000006fa8      0xbc6 aes_ctr_756 THUMB Debug/timer.o
- .debug_info    0x0000000000007b6e      0x5bc aes_ctr_756 THUMB Debug/uart.o
- .debug_info    0x000000000000812a       0x24 aes_ctr_756 THUMB Debug/STM32_Startup.o
- .debug_info    0x000000000000814e       0x22 aes_ctr_756 THUMB Debug/thumb_crt0.o
+.debug_info     0x0000000000000000     0x8185
+ .debug_info    0x0000000000000000      0xe82 aes_ctr_756 THUMB Debug/crypto.o
+ .debug_info    0x0000000000000e82      0x374 aes_ctr_756 THUMB Debug/main.o
+ .debug_info    0x00000000000011f6      0xa06 aes_ctr_756 THUMB Debug/stm32f7xx_hal.o
+ .debug_info    0x0000000000001bfc     0x1080 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cortex.o
+ .debug_info    0x0000000000002c7c     0x1de7 aes_ctr_756 THUMB Debug/stm32f7xx_hal_cryp.o
+ .debug_info    0x0000000000004a63      0x937 aes_ctr_756 THUMB Debug/stm32f7xx_hal_dma.o
+ .debug_info    0x000000000000539a      0xd28 aes_ctr_756 THUMB Debug/stm32f7xx_hal_msp.o
+ .debug_info    0x00000000000060c2      0x854 aes_ctr_756 THUMB Debug/stm32f7xx_it.o
+ .debug_info    0x0000000000006916      0x342 aes_ctr_756 THUMB Debug/sys_clk.o
+ .debug_info    0x0000000000006c58      0x365 aes_ctr_756 THUMB Debug/system_stm32f7xx.o
+ .debug_info    0x0000000000006fbd      0xbc6 aes_ctr_756 THUMB Debug/timer.o
+ .debug_info    0x0000000000007b83      0x5bc aes_ctr_756 THUMB Debug/uart.o
+ .debug_info    0x000000000000813f       0x24 aes_ctr_756 THUMB Debug/STM32_Startup.o
+ .debug_info    0x0000000000008163       0x22 aes_ctr_756 THUMB Debug/thumb_crt0.o
 
 .debug_abbrev   0x0000000000000000     0x1662
  .debug_abbrev  0x0000000000000000      0x282 aes_ctr_756 THUMB Debug/crypto.o

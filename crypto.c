@@ -6,8 +6,11 @@
 
 
 CRYP_HandleTypeDef hcryp;
-__ALIGN_BEGIN static const uint32_t pKeyCRYP[4] __ALIGN_END = {
-		0x2b7e1516, 0x28aed2a6, 0xabf75e70, 0x2b7e1516};
+__ALIGN_BEGIN static const uint32_t pKeyCRYP[8] __ALIGN_END = {
+		    0x603deb10, 0x15ca71be,
+    0x2b73aef0, 0x857d7781,
+    0x1f352c07, 0x3b6108d7,
+    0x2d9810a3, 0x0914dff4};
 __ALIGN_BEGIN static const uint32_t pInitVectCRYP[4] __ALIGN_END = {
 		0x00010203, 0x04050607, 0x08090a0b, 0x0c0d0e0f};
 
@@ -27,7 +30,7 @@ uint8_t count = 0;
 
   hcryp.Instance = CRYP;
   hcryp.Init.DataType = CRYP_DATATYPE_8B;
-  hcryp.Init.KeySize = CRYP_KEYSIZE_128B;
+  hcryp.Init.KeySize = CRYP_KEYSIZE_256B;
   hcryp.Init.pKey = (uint32_t *)pKeyCRYP;
   hcryp.Init.pInitVect = (uint32_t *)pInitVectCRYP;
   hcryp.Init.Algorithm = CRYP_AES_CTR;
