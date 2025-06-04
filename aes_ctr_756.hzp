@@ -1,0 +1,122 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="aes_ctr_756" target="8" version="2">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+  <configuration
+    Name="THUMB"
+    Platform="ARM"
+    arm_instruction_set="Thumb"
+    arm_library_instruction_set="Thumb"
+    c_preprocessor_definitions="__THUMB"
+    hidden="Yes" />
+  <configuration Name="THUMB Debug" inherited_configurations="THUMB;Debug" />
+  <configuration
+    Name="THUMB Release"
+    inherited_configurations="THUMB;Release" />
+  <project Name="aes_ctr_756">
+    <configuration
+      CMSIS_CORE="Yes"
+      Name="Common"
+      Placement="Flash"
+      Target="STM32F756VG"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_fp_abi="Soft"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="128"
+      arm_linker_jtag_pad_pre_dr="1"
+      arm_linker_jtag_pad_pre_ir="5"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="256"
+      arm_simulator_memory_simulation_filename="$(TargetsDir)/STM32/STM32SimulatorMemory$(HostDLL)"
+      arm_simulator_memory_simulation_parameter="STM32F756VG;0x100000;0x50000"
+      arm_target_loader_applicable_loaders="Flash"
+      arm_target_loader_default_loader="Flash"
+      arm_target_trace_interface_type="None"
+      c_user_include_directories="$(TargetsDir)/STM32/include"
+      debug_register_definition_file="$(TargetsDir)/STM32/STM32F756_Peripherals.xml"
+      linker_additional_files=""
+      linker_memory_map_file="$(TargetsDir)/STM32/STM32F756VG_MemoryMap.xml"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      macros="DeviceVectorsFile=STM32F756xx.vec"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(TargetsDir)/STM32/propertyGroups.xml"
+      target_get_partname_script="GetPartName()"
+      target_match_partname_script="MatchPartName(&quot;$(Target)&quot;)"
+      target_script_file="$(TargetsDir)/STM32/STM32_Target.js"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <configuration
+      Name="Flash"
+      arm_target_flash_loader_file_path="$(LOADER:$(TargetsDir)/STM32/Release/STM32F2xx_Loader_rpc.elf)"
+      arm_target_loader_can_erase_all="Yes"
+      arm_target_loader_can_lock_all="No"
+      arm_target_loader_can_lock_range="No"
+      arm_target_loader_can_unlock_all="No"
+      arm_target_loader_can_unlock_range="No"
+      target_reset_script="FLASHReset()" />
+    <configuration Name="RAM" target_reset_script="Reset()" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="crypto.c" />
+      <file file_name="crypto.h" />
+      <file file_name="main.c" />
+      <file file_name="main.h" />
+      <file file_name="stm32_hal_legacy.h" />
+      <file file_name="stm32f7xx_hal.c" />
+      <file file_name="stm32f7xx_hal.h" />
+      <file file_name="stm32f7xx_hal_conf.h" />
+      <file file_name="stm32f7xx_hal_cortex.c" />
+      <file file_name="stm32f7xx_hal_cortex.h" />
+      <file file_name="stm32f7xx_hal_cryp.c" />
+      <file file_name="stm32f7xx_hal_cryp.h" />
+      <file file_name="stm32f7xx_hal_cryp_ex.c" />
+      <file file_name="stm32f7xx_hal_cryp_ex.h" />
+      <file file_name="stm32f7xx_hal_def.h" />
+      <file file_name="stm32f7xx_hal_dma.c" />
+      <file file_name="stm32f7xx_hal_dma.h" />
+      <file file_name="stm32f7xx_hal_dma_ex.c" />
+      <file file_name="stm32f7xx_hal_dma_ex.h" />
+      <file file_name="stm32f7xx_hal_flash.c" />
+      <file file_name="stm32f7xx_hal_flash.h" />
+      <file file_name="stm32f7xx_hal_flash_ex.c" />
+      <file file_name="stm32f7xx_hal_flash_ex.h" />
+      <file file_name="stm32f7xx_hal_gpio.c" />
+      <file file_name="stm32f7xx_hal_gpio.h" />
+      <file file_name="stm32f7xx_hal_gpio_ex.h" />
+      <file file_name="stm32f7xx_hal_msp.c" />
+      <file file_name="stm32f7xx_hal_rcc.c" />
+      <file file_name="stm32f7xx_hal_rcc.h" />
+      <file file_name="stm32f7xx_hal_rcc_ex.c" />
+      <file file_name="stm32f7xx_hal_rcc_ex.h" />
+      <file file_name="stm32f7xx_it.c" />
+      <file file_name="stm32f7xx_it.h" />
+      <file file_name="sys_clk.c" />
+      <file file_name="sys_clk.h" />
+      <file file_name="syscalls.c" />
+      <file file_name="sysmem.c" />
+      <file file_name="system_stm32f7xx.c" />
+      <file file_name="timer.c" />
+      <file file_name="timer.h" />
+      <file file_name="uart.c" />
+      <file file_name="uart.h" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="STM32F756xx.vec" />
+      <file file_name="STM32_Startup.s" />
+      <file file_name="thumb_crt0.s" />
+    </folder>
+  </project>
+</solution>

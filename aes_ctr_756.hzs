@@ -1,0 +1,92 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="65" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="crypto.c" useHWbreakpoint="false"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBuffer>
+  <FrameBufferWindow width="0" keepAspectRatio="0" zoomToFitWindow="0" addressSpace="" format="0" height="0" autoEvaluate="0" scaleFactor="1" refreshPeriod="0" name="aesctr_THUMB Debug" addressText="" accessByDisplayWidth="0"/>
+  <FrameBufferWindow width="0" keepAspectRatio="0" zoomToFitWindow="0" addressSpace="" format="0" height="0" autoEvaluate="0" scaleFactor="1" refreshPeriod="0" name="aes_ctr_756_THUMB Debug" addressText="" accessByDisplayWidth="0"/>
+ </FrameBuffer>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aesctr_THUMB Debug" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aes_ctr_756_THUMB Debug" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aesctr_THUMB Debug" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aes_ctr_756_THUMB Debug" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aesctr_THUMB Debug" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aes_ctr_756_THUMB Debug" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aesctr_THUMB Debug" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="aes_ctr_756_THUMB Debug" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="aes_ctr_756"/>
+  <ProjectSessionItem path="aes_ctr_756;aes_ctr_756"/>
+  <ProjectSessionItem path="aes_ctr_756;aes_ctr_756;Source Files"/>
+  <ProjectSessionItem path="aes_ctr_756;aes_ctr_756;System Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aesctr_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="USART1/CR1;USART1/CR2;USART1/CR3;USART1/BRR;USART1/GTPR;USART1/RTOR;USART1/RQR;USART1/ISR;USART1/ICR;USART1/RDR;USART1/TDR;TIM2/CR1;TIM2/CR2;TIM2/SMCR;TIM2/DIER;TIM2/SR;TIM2/EGR;TIM2/CCMR1_Output;TIM2/CCMR1_Input;TIM2/CCMR2_Output;TIM2/CCMR2_Input;TIM2/CCER;TIM2/CNT;TIM2/PSC;TIM2/ARR;TIM2/CCR1;TIM2/CCR2;TIM2/CCR3;TIM2/CCR4;TIM2/DCR;TIM2/DMAR;TIM2/OR1;TIM2/OR2;CRYP/CR;CRYP/SR;CRYP/DIN;CRYP/DOUT;CRYP/DMACR;CRYP/IMSCR;CRYP/RISR;CRYP/MISR;CRYP/K0LR;CRYP/K0RR;CRYP/K1LR;CRYP/K1RR;CRYP/K2LR;CRYP/K2RR;CRYP/K3LR;CRYP/K3RR;CRYP/IV0LR;CRYP/IV0RR;CRYP/IV1LR;CRYP/IV1RR;CRYP/CSGCMCCM0R;CRYP/CSGCMCCM1R;CRYP/CSGCMCCM2R;CRYP/CSGCMCCM3R;CRYP/CSGCMCCM4R;CRYP/CSGCMCCM5R;CRYP/CSGCMCCM6R;CRYP/CSGCMCCM7R;CRYP/CSGCM0R;CRYP/CSGCM1R;CRYP/CSGCM2R;CRYP/CSGCM3R;CRYP/CSGCM4R;CRYP/CSGCM5R;CRYP/CSGCM6R;CRYP/CSGCM7R;NVIC/NVIC_ISER0;NVIC/NVIC_ISER1;NVIC/NVIC_ISER2;NVIC/NVIC_ISER3;NVIC/NVIC_ICER0;NVIC/NVIC_ICER1;NVIC/NVIC_ICER2;NVIC/NVIC_ICER3;NVIC/NVIC_ISPR0;NVIC/NVIC_ISPR1;NVIC/NVIC_ISPR2;NVIC/NVIC_ISPR3;NVIC/NVIC_ICPR0;NVIC/NVIC_ICPR1;NVIC/NVIC_ICPR2;NVIC/NVIC_ICPR3;NVIC/NVIC_IABR0;NVIC/NVIC_IABR1;NVIC/NVIC_IABR2;NVIC/NVIC_IABR3;NVIC/NVIC_IPR0;NVIC/NVIC_IPR1;NVIC/NVIC_IPR2;NVIC/NVIC_IPR3;NVIC/NVIC_IPR4;NVIC/NVIC_IPR5;NVIC/NVIC_IPR6;NVIC/NVIC_IPR7;NVIC/NVIC_IPR8;NVIC/NVIC_IPR9;NVIC/NVIC_IPR10;NVIC/NVIC_IPR11;NVIC/NVIC_IPR12;NVIC/NVIC_IPR13;NVIC/NVIC_IPR14;NVIC/NVIC_IPR15;NVIC/NVIC_IPR16;NVIC/NVIC_IPR17;NVIC/NVIC_IPR18;NVIC/NVIC_IPR19;NVIC/NVIC_IPR20;NVIC/NVIC_IPR21;NVIC/NVIC_IPR22;NVIC/NVIC_IPR23;NVIC/NVIC_IPR24" binaryNodes="" asciiNodes="" openNodes="USART1;USART1/BRR;USART1/ISR;USART1/TDR;TIM2;TIM2/SR;CRYP;CRYP/CR;CRYP/SR;CRYP/IMSCR;NVIC;NVIC/NVIC_ISER0;NVIC/NVIC_ISER1;NVIC/NVIC_ISER2;NVIC/NVIC_ICER0;NVIC/NVIC_ISPR0" name="aes_ctr_756_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aesctr_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aes_ctr_756_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aesctr_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aes_ctr_756_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aesctr_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="aes_ctr_756_THUMB Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <TargetWindow programLoadAddress="" programSize="" programMemoryInterface="" programFileName="" programFileType="" programAction=""/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Twice a Second">
+   <Watchpoint expression="ciphertext" name="ciphertext" radix="16" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="decryptedtext" name="decryptedtext" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="encryptedtext" name="encryptedtext" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="plaintext" name="plaintext" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="uart1_tx" name="uart1_tx" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="uart1_rx" name="uart1_rx" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="HAL_OK" name="HAL_OK" radix="11" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="status" name="status" radix="-1" linenumber="0" filename="../aes_ctr_756"/>
+   <Watchpoint expression="hcryp->Size" name="hcryp->Size" radix="-1" linenumber="0" filename="../AES_CTR_756-master"/>
+   <Watchpoint expression="plaintext_buffer" name="plaintext_buffer" radix="-1" linenumber="0" filename=""/>
+   <Watchpoint expression="tx_size" name="tx_size" radix="11" linenumber="0" filename=""/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="10" useTextEdit="1" path="main.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" openedFrom="C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master/main.c" path="uart.c" left="0" top="113" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="75" useTextEdit="1" openedFrom="C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master/main.c" path="crypto.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="17" useTextEdit="1" openedFrom="C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master/crypto.c" path="crypto.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="3" useTextEdit="1" path="main.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" path="sys_clk.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1624" useTextEdit="1" path="stm32f7xx_hal_cryp.c" left="0" selected="1" top="1604" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="stm32f7xx_hal_msp.c" left="0" top="93" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="aes_ctr_756" fileDialogDefaultFilter="*.c" autoConnectTarget="ST-LINK/V2-V3" buildConfiguration="THUMB Debug" sessionSettings="" debugSearchFileMap="C:/Users/bijit/AppData/Local/Rowley Associates Limited/CrossWorks for ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/core_cm7.h&#xa;&#xa;C:/Users/bijit/OneDrive/Desktop/work/aes_ctr_756/crypto.c&#xa;C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master/main.c&#xa;C:/Users/bijit/OneDrive/Desktop/work/aes_ctr_756/uart.c&#xa;C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master/uart.c" fileDialogInitialDirectory="C:/Users/admin/Downloads/AES_CTR_756-master/AES_CTR_756-master" debugSearchPath="" autoConnectCapabilities="266111"/>
+</session>
